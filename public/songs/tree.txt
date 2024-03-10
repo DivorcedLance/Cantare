@@ -1,0 +1,45 @@
+Listado de rutas de carpetas para el volumen Nuevo vol
+El n£mero de serie del volumen es 0A73-DB86
+D:.
+³   tree.txt
+³   
+ÃÄÄÄALI - Wild Side
+³       01 - Wild Side.lrc
+³       01 - Wild Side.mp3
+³       cover.jpg
+³       
+ÃÄÄÄBandalos Chinos - Mi Fiesta
+³       01 - Mi Fiesta.lrc
+³       01 - Mi Fiesta.mp3
+³       cover.jpg
+³       
+ÃÄÄÄBritney Spears - In The Zone
+³       06 - Toxic.lrc
+³       06 - Toxic.mp3
+³       cover.jpg
+³       
+ÃÄÄÄCreepy Nuts - Bling-Bang-Bang-Born
+³       01 - Bling-Bang-Bang-Born.lrc
+³       01 - Bling-Bang-Bang-Born.mp3
+³       cover.jpg
+³       
+ÃÄÄÄGativideo - Flota Flota
+³       01 - Flota Flota.lrc
+³       01 - Flota Flota.mp3
+³       cover.jpg
+³       
+ÃÄÄÄJihyo - ZONE
+³       01 - Killin Me Good.lrc
+³       01 - Killin Me Good.mp3
+³       03 - Closer.lrc
+³       03 - Closer.mp3
+³       07 - Nightmare.lrc
+³       07 - Nightmare.mp3
+³       cover.jpg
+³       
+ÃÄÄÄKali Uchis - ORQUIDEAS
+³       01 - Como As¡_.lrc
+³       01 - Como As¡_.mp3
+³       03 - Igual Que Un Angel.lrc
+³       03 - Igual Que Un Angel.mp3
+³ 

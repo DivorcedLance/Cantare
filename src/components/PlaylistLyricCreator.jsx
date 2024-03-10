@@ -21,21 +21,14 @@ export const PlaylistLyricsCreator = ({ songs }) => {
   }
 
   return (
-    <>
-      <div>
-        <h2>{songs[currentSongIndex].metaData.title}</h2>
-        <h3>{songs[currentSongIndex].metaData.artist}</h3>
-        <h3>{songs[currentSongIndex].metaData.album}</h3>
-        <h3>{songs[currentSongIndex].metaData.year}</h3>
-        
-        <button onClick={playPreviousSong}>Previous</button>
-        <button onClick={playNextSong}>Next</button>
-      </div>
-
+    <div style={{ padding: "20px" }}>
       <LyricsCreator
           autoPlay={true}
           audioSrc={songs[currentSongIndex].audioFile}
+          playNextSong={playNextSong}
+          playPreviousSong={playPreviousSong}
+          metaData={songs[currentSongIndex].metaData}
         />
-      </>
+      </div>
   );
 };

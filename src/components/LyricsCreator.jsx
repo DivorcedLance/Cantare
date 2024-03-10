@@ -1,14 +1,19 @@
 import { useEffect, useRef, useState } from 'react'
-import { AudioCustom } from './AudioCustom'
+import { AudioDisplay } from './AudioDisplay'
 import { LyricsDisplay } from './LyricsDisplay'
 
-export function LyricsCreator({ audioSrc, autoPlay }) {
-
+export function LyricsCreator({
+  audioSrc,
+  autoPlay,
+  playNextSong,
+  playPreviousSong,
+  metaData,
+}) {
   const inputTextAreaRef = useRef(null)
   const resultTextAreaRef = useRef(null)
 
   const [lyrics, setLyrics] = useState([])
-  const [lyricsTextResult, setLyricsTextResult] = useState("")
+  const [lyricsTextResult, setLyricsTextResult] = useState('')
   const [currentLyricIndex, setCurrentLyricIndex] = useState(0)
   const [currentEditingLyricIndex, setCurrentEditingLyricIndex] = useState(0)
   const [currentTime, setCurrentTime] = useState(0)
@@ -60,33 +65,47 @@ export function LyricsCreator({ audioSrc, autoPlay }) {
 
   useEffect(() => {
     const result = lyrics.map((lyric) => {
-      return lyric.time ? `[${getTimeStr(lyric.time)}]${lyric.text}` : lyric.text
+      return lyric.time
+        ? `[${getTimeStr(lyric.time)}]${lyric.text}`
+        : lyric.text
     })
     setLyricsTextResult(result.join('\n'))
   }, [lyrics])
 
   return (
     <div>
-      <AudioCustom
+      <AudioDisplay
         audioSrc={audioSrc}
         onUpdateCurrentTime={setCurrentTime}
         onSongEnd={() => {}}
         autoPlay={autoPlay}
+        playNextSong={playNextSong}
+        playPreviousSong={playPreviousSong}
+        metaData={metaData}
       />
-      <div style={{ display: "flex", flexDirection: "column" }}>
-        <textarea ref={inputTextAreaRef}  rows="25" cols="100"/>
+      <div style={{ display: 'flex', flexDirection: 'column', maxWidth: '900px', margin: "0 auto" }}>
+        <textarea ref={inputTextAreaRef} rows="25" cols="1" />
         <button onClick={parseText}>Parse</button>
         <button onClick={setTimeStamp}>Set TimeStamp</button>
         <h3>{currentLyricIndex}</h3>
         <h3>{currentEditingLyricIndex}</h3>
       </div>
-      <div style={{ display: "flex", flexDirection: "row" }}>
-        <LyricsDisplay lyrics={lyrics} currentLyricIndex={currentLyricIndex} />
-        <div style={{ display: "flex", flexDirection: "column" }}>
-          <textarea ref={resultTextAreaRef} value={lyricsTextResult} rows="25" cols="100"></textarea>
-        <button onClick={() => {
-          navigator.clipboard.writeText(resultTextAreaRef.current.value)
-        }}>Copy to ClipBoard</button>
+      <div style={{ display: 'flex', flexDirection: 'row' }}>
+        <LyricsDisplay lyrics={lyrics} currentLyricIndex={currentLyricIndex} autoScroll={false}/>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <textarea
+            ref={resultTextAreaRef}
+            value={lyricsTextResult}
+            rows="25"
+            cols="100"
+          ></textarea>
+          <button
+            onClick={() => {
+              navigator.clipboard.writeText(resultTextAreaRef.current.value)
+            }}
+          >
+            Copy to ClipBoard
+          </button>
         </div>
       </div>
     </div>

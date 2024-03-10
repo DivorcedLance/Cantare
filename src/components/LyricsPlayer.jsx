@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { LyricsController } from './LyricsController'
-import { AudioCustom } from './AudioCustom'
+import { AudioDisplay } from './AudioDisplay'
 
 export function LyricsPlayer({
   audioSrc,
@@ -9,10 +9,10 @@ export function LyricsPlayer({
   autoPlay,
 }) {
   const [currentTime, setCurrentTime] = useState(0)
-
+  
   return (
     <div>
-      <AudioCustom
+      <AudioDisplay
         audioSrc={audioSrc}
         onUpdateCurrentTime={setCurrentTime}
         onSongEnd={onSongEnd}

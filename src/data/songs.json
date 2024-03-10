@@ -1,35 +1,326 @@
 [
   {
-    "audioFile": "/songs/06 - Supper's Ready (Digital Remastered 2008).mp3",
-    "lyricFile": "/lyrics/06 - Supper's Ready (Digital Remastered 2008).lrc",
-    "metaData": {
-      "title": "Supper's Ready",
-      "artist": "Genesis",
-      "album": "Foxtrot",
-      "year": "1972",
-      "genre": "Progressive Rock"
-    }
+     "audioFile":"/songs/ALI - Wild Side/01 - Wild Side.mp3",
+     "lyricFile":"/songs/ALI - Wild Side/01 - Wild Side.lrc",
+     "metaData":{
+        "title":"Wild Side",
+        "artist":"ALI",
+        "cover":"/songs/ALI - Wild Side/cover.jpg"
+     }
   },
   {
-    "audioFile": "/songs/06 - The Knife (Remastered 2008).mp3",
-    "lyricFile": "/lyrics/06 - The Knife (Remastered 2008).lrc",
-    "metaData": {
-      "title": "The Knife",
-      "artist": "Genesis",
-      "album": "Trespass",
-      "year": "1970",
-      "genre": "Progressive Rock"
-    }
+     "audioFile":"/songs/Britney Spears - In The Zone/06 - Toxic.mp3",
+     "lyricFile":"/songs/Britney Spears - In The Zone/06 - Toxic.lrc",
+     "metaData":{
+        "title":"Toxic",
+        "artist":"Britney Spears",
+        "cover":"/songs/Britney Spears - In The Zone/cover.jpg"
+     }
   },
   {
-    "audioFile": "/songs/10 - Carpet Crawlers (2008 Digital Remaster).mp3",
-    "lyricFile": "/lyrics/10 - Carpet Crawlers (2008 Digital Remaster).lrc",
-    "metaData": {
-      "title": "Carpet Crawlers",
-      "artist": "Genesis",
-      "album": "The Lamb Lies Down on Broadway",
-      "year": "1974",
-      "genre": "Progressive Rock"
-    }
-  }
+     "audioFile":"/songs/Creepy Nuts - Bling-Bang-Bang-Born/01 - Bling-Bang-Bang-Born.mp3",
+     "lyricFile":"/songs/Creepy Nuts - Bling-Bang-Bang-Born/01 - Bling-Bang-Bang-Born.lrc",
+     "metaData":{
+        "title":"Bling-Bang-Bang-Born",
+        "artist":"Creepy Nuts",
+        "cover":"/songs/Creepy Nuts - Bling-Bang-Bang-Born/cover.jpg"
+     }
+  },
+  {
+     "audioFile":"/songs/Kali Uchis - ORQUÍDEAS/01 - Como Así_.mp3",
+     "lyricFile":"/songs/Kali Uchis - ORQUÍDEAS/01 - Como Así_.lrc",
+     "metaData":{
+        "title":"Como Así",
+        "artist":"Kali Uchis",
+        "cover":"/songs/Kali Uchis - ORQUÍDEAS/cover.jpg"
+     }
+  },
+  {
+     "audioFile":"/songs/Kali Uchis - ORQUÍDEAS/03 - Igual Que Un Ángel.mp3",
+     "lyricFile":"/songs/Kali Uchis - ORQUÍDEAS/03 - Igual Que Un Ángel.lrc",
+     "metaData":{
+        "title":"Igual Que Un Ángel",
+        "artist":"Kali Uchis",
+        "cover":"/songs/Kali Uchis - ORQUÍDEAS/cover.jpg"
+     }
+  },
+  {
+     "audioFile":"/songs/Kali Uchis - ORQUÍDEAS/04 - Pensamientos Intrusivos.mp3",
+     "lyricFile":"/songs/Kali Uchis - ORQUÍDEAS/04 - Pensamientos Intrusivos.lrc",
+     "metaData":{
+        "title":"Pensamientos Intrusivos",
+        "artist":"Kali Uchis",
+        "cover":"/songs/Kali Uchis - ORQUÍDEAS/cover.jpg"
+     }
+  },
+  {
+     "audioFile":"/songs/Kali Uchis - ORQUÍDEAS/13 - Heladito.mp3",
+     "lyricFile":"/songs/Kali Uchis - ORQUÍDEAS/13 - Heladito.lrc",
+     "metaData":{
+        "title":"Heladito",
+        "artist":"Kali Uchis",
+        "cover":"/songs/Kali Uchis - ORQUÍDEAS/cover.jpg"
+     }
+  },
+  {
+     "audioFile":"/songs/Kali Uchis - ORQUÍDEAS/14 - Dame Beso __ Muévete.mp3",
+     "lyricFile":"/songs/Kali Uchis - ORQUÍDEAS/14 - Dame Beso __ Muévete.lrc",
+     "metaData":{
+        "title":"Dame Beso Muévete",
+        "artist":"Kali Uchis",
+        "cover":"/songs/Kali Uchis - ORQUÍDEAS/cover.jpg"
+     }
+  },
+  {
+     "audioFile":"/songs/Lady Gaga - Bad Romance/01 - Bad Romance.mp3",
+     "lyricFile":"/songs/Lady Gaga - Bad Romance/01 - Bad Romance.lrc",
+     "metaData":{
+        "title":"Bad Romance",
+        "artist":"Lady Gaga",
+        "cover":"/songs/Lady Gaga - Bad Romance/cover.jpg"
+     }
+  },
+  {
+     "audioFile":"/songs/LE SSERAFIM - ANTIFRAGILE/02 - ANTIFRAGILE.mp3",
+     "lyricFile":"/songs/LE SSERAFIM - ANTIFRAGILE/02 - ANTIFRAGILE.lrc",
+     "metaData":{
+        "title":"ANTIFRAGILE",
+        "artist":"LE SSERAFIM",
+        "cover":"/songs/LE SSERAFIM - ANTIFRAGILE/cover.jpg"
+     }
+  },
+  {
+     "audioFile":"/songs/LE SSERAFIM - UNFORGIVEN/10 - Eve, Psyche & The Bluebeards wife.mp3",
+     "lyricFile":"/songs/LE SSERAFIM - UNFORGIVEN/10 - Eve, Psyche & The Bluebeards wife.lrc",
+     "metaData":{
+        "title":"Eve, Psyche & The Bluebeard's wife",
+        "artist":"LE SSERAFIM",
+        "cover":"/songs/LE SSERAFIM - UNFORGIVEN/cover.jpg"
+     }
+  },
+  {
+     "audioFile":"/songs/Miki Matsubara - Miki Matsubara Best Collection/04 - Mayonaka no Door _ Stay With Me.mp3",
+     "lyricFile":"/songs/Miki Matsubara - Miki Matsubara Best Collection/04 - Mayonaka no Door _ Stay With Me.lrc",
+     "metaData":{
+        "title":"Stay With Me",
+        "artist":"Miki Matsubara",
+        "cover":"/songs/Miki Matsubara - Miki Matsubara Best Collection/cover.jpg"
+     }
+  },
+  {
+     "audioFile":"/songs/PinkPantheress - I must apologise/01 - I Must Apologise.mp3",
+     "lyricFile":"/songs/PinkPantheress - I must apologise/01 - I Must Apologise.lrc",
+     "metaData":{
+        "title":"I Must Apologise",
+        "artist":"PinkPantheress",
+        "cover":"/songs/PinkPantheress - I must apologise/cover.jpg"
+     }
+  },
+  {
+     "audioFile":"/songs/TWICE - Doughnut/01 - Doughnut.mp3",
+     "lyricFile":"/songs/TWICE - Doughnut/01 - Doughnut.lrc",
+     "metaData":{
+        "title":"Doughnut",
+        "artist":"TWICE",
+        "cover":"/songs/TWICE - Doughnut/cover.jpg"
+     }
+  },
+  {
+     "audioFile":"/songs/TWICE - Eyes Wide Open/01 - I CAN'T STOP ME.mp3",
+     "lyricFile":"/songs/TWICE - Eyes Wide Open/01 - I CAN'T STOP ME.lrc",
+     "metaData":{
+        "title":"I CAN'T STOP ME",
+        "artist":"TWICE",
+        "cover":"/songs/TWICE - Eyes Wide Open/cover.jpg"
+     }
+  },
+  {
+     "audioFile":"/songs/TWICE - READY TO BE/06 - CRAZY STUPID LOVE.mp3",
+     "lyricFile":"/songs/TWICE - READY TO BE/06 - CRAZY STUPID LOVE.lrc",
+     "metaData":{
+        "title":"CRAZY STUPID LOVE",
+        "artist":"TWICE",
+        "cover":"/songs/TWICE - READY TO BE/cover.jpg"
+     }
+  },
+  {
+     "audioFile":"/songs/TWICE - With YOU-th/01 - I GOT YOU.mp3",
+     "lyricFile":"/songs/TWICE - With YOU-th/01 - I GOT YOU.lrc",
+     "metaData":{
+        "title":"I GOT YOU",
+        "artist":"TWICE",
+        "cover":"/songs/TWICE - With YOU-th/cover.jpg"
+     }
+  },
+  {
+     "audioFile":"/songs/TWICE - With YOU-th/03 - RUSH.mp3",
+     "lyricFile":"/songs/TWICE - With YOU-th/03 - RUSH.lrc",
+     "metaData":{
+        "title":"RUSH",
+        "artist":"TWICE",
+        "cover":"/songs/TWICE - With YOU-th/cover.jpg"
+     }
+  },
+  {
+     "audioFile":"/songs/TWICE - With YOU-th/05 - BLOOM.mp3",
+     "lyricFile":"/songs/TWICE - With YOU-th/05 - BLOOM.lrc",
+     "metaData":{
+        "title":"BLOOM",
+        "artist":"TWICE",
+        "cover":"/songs/TWICE - With YOU-th/cover.jpg"
+     }
+  },
+  {
+   "audioFile":"/songs/Bandalos Chinos - Mi Fiesta/01 - Mi Fiesta.mp3",
+   "lyricFile":"/songs/Bandalos Chinos - Mi Fiesta/01 - Mi Fiesta.lrc",
+   "metaData":{
+      "title":"Mi Fiesta",
+      "artist":"Bandalos Chinos",
+      "cover":"/songs/Bandalos Chinos - Mi Fiesta/cover.jpg"
+   }
+   },
+   {
+      "audioFile":"/songs/Gativideo - Flota Flota/01 - Flota Flota.mp3",
+      "lyricFile":"/songs/Gativideo - Flota Flota/01 - Flota Flota.lrc",
+      "metaData":{
+         "title":"Flota Flota",
+         "artist":"Gativideo",
+         "cover":"/songs/Gativideo - Flota Flota/cover.jpg"
+      }
+   },
+   {
+      "audioFile":"/songs/La Garfield - Todo Lo Rico/02 - Luna de Plata.mp3",
+      "lyricFile":"/songs/La Garfield - Todo Lo Rico/02 - Luna de Plata.lrc",
+      "metaData":{
+         "title":"Luna de Plata",
+         "artist":"La Garfield",
+         "cover":"/songs/La Garfield - Todo Lo Rico/cover.jpg"
+      }
+   },
+   {
+      "audioFile":"/songs/MIEL - EME/01 - EME.mp3",
+      "lyricFile":"/songs/MIEL - EME/01 - EME.lrc",
+      "metaData":{
+         "title":"EME",
+         "artist":"MIEL",
+         "cover":"/songs/MIEL - EME/cover.jpg"
+      }
+   },
+   {
+      "audioFile":"/songs/TWICE - CRY FOR ME/01 - CRY FOR ME.mp3",
+      "lyricFile":"/songs/TWICE - CRY FOR ME/01 - CRY FOR ME.lrc",
+      "metaData":{
+         "title":"CRY FOR ME",
+         "artist":"TWICE",
+         "cover":"/songs/TWICE - CRY FOR ME/cover.jpg"
+      }
+   },
+   {
+      "audioFile":"/songs/TWICE - Formula of Love_ O+T=_3/03 - ICON.mp3",
+      "lyricFile":"/songs/TWICE - Formula of Love_ O+T=_3/03 - ICON.lrc",
+      "metaData":{
+         "title":"ICON",
+         "artist":"TWICE",
+         "cover":"/songs/TWICE - Formula of Love_ O+T=_3/cover.jpg"
+      }
+   },
+   {
+      "audioFile":"/songs/TWICE - Formula of Love_ O+T=_3/15 - The Feels.mp3",
+      "lyricFile":"/songs/TWICE - Formula of Love_ O+T=_3/15 - The Feels.lrc",
+      "metaData":{
+         "title":"The Feels",
+         "artist":"TWICE",
+         "cover":"/songs/TWICE - Formula of Love_ O+T=_3/cover.jpg"
+      }
+   },
+   {
+      "audioFile":"/songs/TWICE - MOONLIGHT SUNRISE/01 - MOONLIGHT SUNRISE.mp3",
+      "lyricFile":"/songs/TWICE - MOONLIGHT SUNRISE/01 - MOONLIGHT SUNRISE.lrc",
+      "metaData":{
+         "title":"MOONLIGHT SUNRISE",
+         "artist":"TWICE",
+         "cover":"/songs/TWICE - MOONLIGHT SUNRISE/cover.jpg"
+      }
+   },
+   {
+      "audioFile":"/songs/TWICE - Taste of Love/01 - Alcohol-Free.mp3",
+      "lyricFile":"/songs/TWICE - Taste of Love/01 - Alcohol-Free.lrc",
+      "metaData":{
+         "title":"Alcohol-Free",
+         "artist":"TWICE",
+         "cover":"/songs/TWICE - Taste of Love/cover.jpg"
+      }
+   },
+   {
+      "audioFile":"/songs/Tricker - Kick Back - SALSA/01 - Kick Back - SALSA.mp3",
+      "lyricFile":"/songs/Tricker - Kick Back - SALSA/01 - Kick Back - SALSA.lrc",
+      "metaData":{
+         "title":"Kick Back - SALSA",
+         "artist":"Tricker",
+         "cover":"/songs/Tricker - Kick Back - SALSA/cover.jpg"
+      }
+   },
+   {
+      "audioFile":"/songs/Jihyo - ZONE/01 - Killin Me Good.mp3",
+      "lyricFile":"/songs/Jihyo - ZONE/01 - Killin Me Good.lrc",
+      "metaData":{
+         "title":"Killin' Me Good",
+         "artist":"Jihyo",
+         "cover":"/songs/Jihyo - ZONE/cover.jpg"
+      }
+   },
+   {
+      "audioFile":"/songs/Jihyo - ZONE/03 - Closer.mp3",
+      "lyricFile":"/songs/Jihyo - ZONE/03 - Closer.lrc",
+      "metaData":{
+         "title":"Closer",
+         "artist":"Jihyo",
+         "cover":"/songs/Jihyo - ZONE/cover.jpg"
+      }
+   },
+   {
+      "audioFile":"/songs/Jihyo - ZONE/07 - Nightmare.mp3",
+      "lyricFile":"/songs/Jihyo - ZONE/07 - Nightmare.lrc",
+      "metaData":{
+         "title":"Nightmare",
+         "artist":"Jihyo",
+         "cover":"/songs/Jihyo - ZONE/cover.jpg"
+      }
+   },
+   {
+      "audioFile":"/songs/MISAMO - Do not touch/01 - Do not touch.mp3",
+      "lyricFile":"/songs/MISAMO - Do not touch/01 - Do not touch.lrc",
+      "metaData":{
+         "title":"Do not touch",
+         "artist":"MISAMO",
+         "cover":"/songs/MISAMO - Do not touch/cover.jpg"
+      }
+   },
+   {
+      "audioFile":"/songs/TWICE - BETWEEN 1&2/06 - Gone.mp3",
+      "lyricFile":"/songs/TWICE - BETWEEN 1&2/06 - Gone.lrc",
+      "metaData":{
+         "title":"Gone",
+         "artist":"TWICE",
+         "cover":"/songs/TWICE - BETWEEN 1&2/cover.jpg"
+      }
+   },
+   {
+      "audioFile":"/songs/TWICE - Formula of Love_ O+T=_3/07 - LAST WALTZ.mp3",
+      "lyricFile":"/songs/TWICE - Formula of Love_ O+T=_3/07 - LAST WALTZ.lrc",
+      "metaData":{
+         "title":"LAST WALTZ",
+         "artist":"TWICE",
+         "cover":"/songs/TWICE - Formula of Love_ O+T=_3/cover.jpg"
+      }
+   },
+   {
+      "audioFile":"/songs/TWICE - Perfect World/01 - Perfect World.mp3",
+      "lyricFile":"/songs/TWICE - Perfect World/01 - Perfect World.lrc",
+      "metaData":{
+         "title":"Perfect World",
+         "artist":"TWICE",
+         "cover":"/songs/TWICE - Perfect World/cover.jpg"
+      }
+   }
 ]
