@@ -1,0 +1,35 @@
+[
+  {
+    "audioFile": "/songs/06 - Supper's Ready (Digital Remastered 2008).mp3",
+    "lyricFile": "/lyrics/06 - Supper's Ready (Digital Remastered 2008).lrc",
+    "metaData": {
+      "title": "Supper's Ready",
+      "artist": "Genesis",
+      "album": "Foxtrot",
+      "year": "1972",
+      "genre": "Progressive Rock"
+    }
+  },
+  {
+    "audioFile": "/songs/06 - The Knife (Remastered 2008).mp3",
+    "lyricFile": "/lyrics/06 - The Knife (Remastered 2008).lrc",
+    "metaData": {
+      "title": "The Knife",
+      "artist": "Genesis",
+      "album": "Trespass",
+      "year": "1970",
+      "genre": "Progressive Rock"
+    }
+  },
+  {
+    "audioFile": "/songs/10 - Carpet Crawlers (2008 Digital Remaster).mp3",
+    "lyricFile": "/lyrics/10 - Carpet Crawlers (2008 Digital Remaster).lrc",
+    "metaData": {
+      "title": "Carpet Crawlers",
+      "artist": "Genesis",
+      "album": "The Lamb Lies Down on Broadway",
+      "year": "1974",
+      "genre": "Progressive Rock"
+    }
+  }
+]
