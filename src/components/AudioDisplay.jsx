@@ -18,7 +18,6 @@ export function AudioDisplay({
   playPreviousSong,
   metaData,
 }) {
-
   const [isPlaying, setIsPlaying] = useState(false)
   const [volume, setVolume] = useState(1)
   const [currentTime, setCurrentTime] = useState(0)
@@ -67,14 +66,7 @@ export function AudioDisplay({
   }
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}
-    >
+    <>
       <audio
         ref={audioRef}
         controls={controls}
@@ -86,64 +78,74 @@ export function AudioDisplay({
         onPause={() => setIsPlaying(false)}
         muted={muted}
       />
-      <div
-        style={{
-          height: '100px',
-          width: '100vw',
-          display: 'flex',
-          flexDirection: 'row',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        {metaData.cover ? <img src={metaData.cover} style={{ width: '100px' }} /> : <div style={{ width: '100px' }}></div>}
-        <div className="metaData">
-          <p className='title'>{metaData.title}</p>
-          <p className='artist'>{metaData.artist}</p>
+      <hr style={{ accentColor: 'fff', width: '100%' }} />
+      <div className="audio-display">
+
+        <div className='meta-data'>
+          <div className="album-cover">
+            {metaData.cover ? (
+              <img src={metaData.cover} style={{ width: '100px' }} />
+            ) : (
+              <div style={{ width: '100px' }}></div>
+            )}
+          </div>
+
+          <div className="song-info">
+            <p className="title">{metaData.title}</p>
+            <p className="artist">{metaData.artist}</p>
+          </div>
         </div>
-        
-        <div style={{
-          display: 'flex',
-          flexDirection: 'row',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}>
+
+        <div
+          className="control-btns"
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
           <Icon src={prevIcon} onClick={playPreviousSong} />
           <Icon
             src={isPlaying ? pauseIcon : playIcon}
             onClick={togglePlayPause}
-            />
+          />
           <Icon rotate={true} src={prevIcon} onClick={playNextSong} />
         </div>
 
-        <div className="timeStamp">{getTimeStr(currentTime)}</div>
-        <input
-          className="custom-slider audio-slider"
-          type="range"
-          min="0"
-          max={audioRef.current?.duration || 0}
-          value={currentTime}
-          onChange={handleTimeChange}
-        />
-        <div className="timeStamp">
-          {getTimeStr(audioRef.current?.duration || 0)}
+        <div className="play-bar">
+          <div className="timeStamp">{getTimeStr(currentTime)}</div>
+          <input
+            className="custom-slider audio-slider"
+            type="range"
+            min="0"
+            max={audioRef.current?.duration || 0}
+            value={currentTime}
+            onChange={handleTimeChange}
+          />
+          <div className="timeStamp">
+            {getTimeStr(audioRef.current?.duration || 0)}
+          </div>
         </div>
-        <Icon
-          src={muted ? muteIcon : volumeIcon}
-          onClick={() => {
-            setMuted(!muted)
-          }}
-        />
-        <input
-          className="custom-slider"
-          type="range"
-          min="0"
-          max="1"
-          step="0.01"
-          value={volume}
-          onChange={handleVolumeChange}
-        />
+
+        <div className="volume-bar">
+          <Icon
+            src={muted ? muteIcon : volumeIcon}
+            onClick={() => {
+              setMuted(!muted)
+            }}
+          />
+          <input
+            className="custom-slider"
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            value={volume}
+            onChange={handleVolumeChange}
+          />
+        </div>
       </div>
-    </div>
+    </>
   )
 }

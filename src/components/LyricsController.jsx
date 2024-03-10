@@ -68,7 +68,7 @@ export function LyricsController({
           }}
         />
         {isConfigOpen ? (
-          <div style={{ position: 'absolute', top: '60px', right: '0', fontWeight: "bold", fontSize: "1.2rem", width: "200px", display: "flex", flexDirection: "column", paddingRight: "20px", gap: "5px" }}>
+          <div style={{ position: 'absolute', top: '60px', right: '0', fontWeight: "bold", fontSize: "1.2rem", width: "fit-content", padding: "5px", display: "flex", flexDirection: "column", paddingRight: "20px", gap: "5px", backgroundColor: "rgb(26, 26, 26)" }}>
             <div style={{ display: "flex", flexDirection: "row", justifyContent: "flex-end" }}>
               <label>Delay: </label>
               <input
