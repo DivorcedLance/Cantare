@@ -70,8 +70,8 @@ function App() {
   ]
 
   return (
-    <PlaylistPlayer songs={songs} />
-    // <PlaylistLyricsCreator songs={editSongs} />
+    // <PlaylistPlayer songs={songs} />
+    <PlaylistLyricsCreator songs={editSongs} />
     // <AudioCustom audioSrc={"/songs/06 - The Knife (Remastered 2008).mp3"} />
   );
 }
