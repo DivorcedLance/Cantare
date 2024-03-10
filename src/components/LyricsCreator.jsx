@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
-import { AudioDisplay } from './AudioDisplay'
+import { AudioCustom } from './AudioCustom'
 import { LyricsDisplay } from './LyricsDisplay'
 
-export function LyricsCreator({ audioSrc, playing, setPlaying, autoPlay }) {
+export function LyricsCreator({ audioSrc, autoPlay }) {
 
   const inputTextAreaRef = useRef(null)
   const resultTextAreaRef = useRef(null)
@@ -67,13 +67,11 @@ export function LyricsCreator({ audioSrc, playing, setPlaying, autoPlay }) {
 
   return (
     <div>
-      <AudioDisplay
+      <AudioCustom
         audioSrc={audioSrc}
         onUpdateCurrentTime={setCurrentTime}
         onSongEnd={() => {}}
         autoPlay={autoPlay}
-        playing={playing}
-        setPlaying={setPlaying}
       />
       <div style={{ display: "flex", flexDirection: "column" }}>
         <textarea ref={inputTextAreaRef}  rows="25" cols="100"/>

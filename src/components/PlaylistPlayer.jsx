@@ -3,7 +3,6 @@ import { LyricsPlayer } from './LyricsPlayer';
 
 export const PlaylistPlayer = ({ songs }) => {
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
-  const [playing, setPlaying] = useState(false);
 
   const handleSongEnd = () => {
     playNextSong();
@@ -34,13 +33,10 @@ export const PlaylistPlayer = ({ songs }) => {
         <h3>{songs[currentSongIndex].metaData.year}</h3>
         
         <button onClick={playPreviousSong}>Previous</button>
-        <button onClick={() => {setPlaying(!playing)}}> {playing ? "Pause" : "Play"}  </button>
         <button onClick={playNextSong}>Next</button>
       </div>
 
       <LyricsPlayer
-        playing={playing}
-        setPlaying={setPlaying}
         autoPlay={true}
         audioSrc={songs[currentSongIndex].audioFile}
         lyricSrc={songs[currentSongIndex].lyricFile}

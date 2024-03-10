@@ -2,16 +2,16 @@ import { PlaylistPlayer } from './components/PlaylistPlayer';
 import { PlaylistLyricsCreator } from './components/PlaylistLyricCreator';
 import { AudioCustom } from './components/AudioCustom';
 
-import s1 from "./assets/06 - Supper's Ready (Digital Remastered 2008).mp3"
-import s2 from "./assets/06 - The Knife (Remastered 2008).mp3"
-import s3 from "./assets/10 - Carpet Crawlers.mp3"
+import s1 from "/songs/06 - Supper's Ready (Digital Remastered 2008).mp3"
+import s2 from "/songs/06 - The Knife (Remastered 2008).mp3"
+import s3 from "/songs/10 - Carpet Crawlers.mp3"
 
-import l1 from "./assets/06 - Supper's Ready (Digital Remastered 2008).lrc"
-import l2 from "./assets/06 - The Knife (Remastered 2008).lrc"
-import l3 from "./assets/10 - Carpet Crawlers.lrc"
+import l1 from "/lyrics/06 - Supper's Ready (Digital Remastered 2008).lrc"
+import l2 from "/lyrics/06 - The Knife (Remastered 2008).lrc"
+import l3 from "/lyrics/10 - Carpet Crawlers.lrc"
 
-import e1 from "./assets/07 - The Fountain Of Salmacis (Digital Remastered 2008).mp3"
-import e2 from "./assets/09 - Brain Damage.mp3"
+import e1 from "/songs/07 - The Fountain Of Salmacis (Digital Remastered 2008).mp3"
+import e2 from "/songs/09 - Brain Damage.mp3"
 
 function App() {
   
@@ -70,9 +70,9 @@ function App() {
   ]
 
   return (
-    // <PlaylistPlayer songs={songs} />
+    <PlaylistPlayer songs={songs} />
     // <PlaylistLyricsCreator songs={editSongs} />
-    <AudioCustom audioFile={s3} />
+    // <AudioCustom audioSrc={"/songs/06 - The Knife (Remastered 2008).mp3"} />
   );
 }
 

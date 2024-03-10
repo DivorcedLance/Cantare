@@ -3,7 +3,6 @@ import { LyricsCreator } from './LyricsCreator';
 
 export const PlaylistLyricsCreator = ({ songs }) => {
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
-  const [playing, setPlaying] = useState(false);
 
   const playNextSong = () => {
     if (currentSongIndex < songs.length - 1) {
@@ -30,13 +29,10 @@ export const PlaylistLyricsCreator = ({ songs }) => {
         <h3>{songs[currentSongIndex].metaData.year}</h3>
         
         <button onClick={playPreviousSong}>Previous</button>
-        <button onClick={() => {setPlaying(!playing)}}> {playing ? "Pause" : "Play"}  </button>
         <button onClick={playNextSong}>Next</button>
       </div>
 
       <LyricsCreator
-          playing={playing}
-          setPlaying={setPlaying}
           autoPlay={true}
           audioSrc={songs[currentSongIndex].audioFile}
         />

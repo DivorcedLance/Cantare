@@ -1,55 +1,62 @@
-import { useState, useRef } from 'react';
+import { useState, useRef } from 'react'
 
-export const AudioCustom = ({ audioFile }) => {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [volume, setVolume] = useState(1);
-  const [currentTime, setCurrentTime] = useState(0);
-  const [controls, setControls] = useState(false);
-  
-  const audioRef = useRef(null);
+export function AudioCustom ({
+  audioSrc,
+  onUpdateCurrentTime,
+  onSongEnd,
+  autoPlay,
+}) {
+  const [isPlaying, setIsPlaying] = useState(false)
+  const [volume, setVolume] = useState(1)
+  const [currentTime, setCurrentTime] = useState(0)
+  const [controls, setControls] = useState(false)
+
+  const audioRef = useRef(null)
 
   const togglePlayPause = () => {
-    const audio = audioRef.current;
+    const audio = audioRef.current
     if (isPlaying) {
-      audio.pause();
+      audio.pause()
     } else {
-      audio.play();
+      audio.play()
     }
-    setIsPlaying(!isPlaying);
-  };
+    setIsPlaying(!isPlaying)
+  }
 
   const handleVolumeChange = (e) => {
-    const newVolume = e.target.value;
-    audioRef.current.volume = newVolume;
-    setVolume(newVolume);
-  };
+    const newVolume = e.target.value
+    audioRef.current.volume = newVolume
+    setVolume(newVolume)
+  }
 
   const handleTimeChange = (e) => {
-    const newTime = e.target.value;
-    audioRef.current.currentTime = newTime;
-    setCurrentTime(newTime);
-  };
+    const newTime = e.target.value
+    audioRef.current.currentTime = newTime
+    setCurrentTime(newTime)
+  }
 
   const handleTimeUpdate = () => {
-    setCurrentTime(audioRef.current.currentTime);
-  };
+    setCurrentTime(audioRef.current.currentTime)
+    onUpdateCurrentTime(audioRef.current.currentTime)
+  }
 
   const onEnded = () => {
-    setIsPlaying(false);
-  };
+    onSongEnd()
+  }
 
   return (
     <div>
       <audio
-        ref={ audioRef }
-        controls={ controls }
-        src={ audioFile }
+        ref={audioRef}
+        controls={controls}
+        src={audioSrc}
         onTimeUpdate={handleTimeUpdate}
         onEnded={onEnded}
+        autoPlay={autoPlay}
+        onPlay={() => setIsPlaying(true)}
+        onPause={() => setIsPlaying(false)}
       />
-      <button onClick={togglePlayPause}>
-        {isPlaying ? 'Pause' : 'Play'}
-      </button>
+      <button onClick={togglePlayPause}>{isPlaying ? 'Pause' : 'Play'}</button>
       {volume}
       <input
         type="range"
@@ -59,7 +66,8 @@ export const AudioCustom = ({ audioFile }) => {
         value={volume}
         onChange={handleVolumeChange}
       />
-      <input type="number" 
+      <input
+        type="number"
         min="0"
         max={audioRef.current?.duration || 0}
         value={currentTime}
@@ -73,5 +81,5 @@ export const AudioCustom = ({ audioFile }) => {
         onChange={handleTimeChange}
       />
     </div>
-  );
-};
+  )
+}

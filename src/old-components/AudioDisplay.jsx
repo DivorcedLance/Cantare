@@ -5,8 +5,6 @@ export function AudioDisplay({
   onUpdateCurrentTime,
   onSongEnd,
   autoPlay,
-  playing,
-  setPlaying,
 }) {
   const audioRef = useRef(null)
 
@@ -33,23 +31,12 @@ export function AudioDisplay({
     const audio = audioRef.current
     audio.addEventListener('timeupdate', onTimeUpdate)
     audio.addEventListener('ended', onSongEnd)
-    audio.addEventListener('play', () => setPlaying(true))
-    audio.addEventListener('pause', () => setPlaying(false))
 
     return () => {
       audio.removeEventListener('timeupdate', onTimeUpdate)
       audio.removeEventListener('ended', onSongEnd)
     }
-  }, [onUpdateCurrentTime, onSongEnd, setPlaying, audioRef])
-
-  useEffect(() => {
-    const audio = audioRef.current
-    if (playing) {
-      audio.play()
-    } else {
-      audio.pause()
-    }
-  }, [playing, audioRef])
+  }, [onUpdateCurrentTime, onSongEnd, audioRef])
 
   return (
     <div>
