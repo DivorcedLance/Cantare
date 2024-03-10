@@ -1,7 +1,13 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from 'react'
 
-export function AudioDisplay({ audioSrc, onUpdateCurrentTime }) {
-
+export function AudioDisplay({
+  audioSrc,
+  onUpdateCurrentTime,
+  onSongEnd,
+  autoPlay,
+  playing,
+  setPlaying,
+}) {
   const audioRef = useRef(null)
 
   const [displayPlayTime, setDisplayPlayTime] = useState('00:00')
@@ -23,20 +29,32 @@ export function AudioDisplay({ audioSrc, onUpdateCurrentTime }) {
       setDisplayPlayTime(getTimeStr(currentTime))
       onUpdateCurrentTime(currentTime)
     }
-    
+
     const audio = audioRef.current
     audio.addEventListener('timeupdate', onTimeUpdate)
+    audio.addEventListener('ended', onSongEnd)
+    audio.addEventListener('play', () => setPlaying(true))
+    audio.addEventListener('pause', () => setPlaying(false))
 
     return () => {
       audio.removeEventListener('timeupdate', onTimeUpdate)
+      audio.removeEventListener('ended', onSongEnd)
     }
+  }, [onUpdateCurrentTime, onSongEnd, setPlaying, audioRef])
 
-  }, [onUpdateCurrentTime])
+  useEffect(() => {
+    const audio = audioRef.current
+    if (playing) {
+      audio.play()
+    } else {
+      audio.pause()
+    }
+  }, [playing, audioRef])
 
   return (
     <div>
-      <audio controls ref={audioRef} src={audioSrc}></audio>
-      {/* <h3>{displayPlayTime}</h3> */}
+      <audio autoPlay={autoPlay} controls ref={audioRef} src={audioSrc}></audio>
+      <h3>{displayPlayTime}</h3>
     </div>
   )
 }
