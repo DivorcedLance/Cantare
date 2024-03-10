@@ -20,7 +20,7 @@ export function AudioDisplay({
 }) {
 
   const [isPlaying, setIsPlaying] = useState(false)
-  const [volume, setVolume] = useState(0.01)
+  const [volume, setVolume] = useState(1)
   const [currentTime, setCurrentTime] = useState(0)
   const [controls, setControls] = useState(false)
   const [muted, setMuted] = useState(false)

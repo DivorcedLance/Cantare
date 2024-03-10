@@ -99,3 +99,35 @@
   margin: 0;
   font-weight: bold;
 }
+
+.playlist-menu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  text-align: left;
+  width: fit-content;
+}
+
+.playlist-menu ul {
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  max-height: 50vh;
+  display: 'flex'; 
+  flex-direction: column; 
+  padding-inline-start: '0'; 
+  margin-block-start: '0' ;
+}
+
+.playlist-menu ul::-webkit-scrollbar {
+  display: none;
+}
+
+.playlist-menu li {
+  list-style: none;
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
